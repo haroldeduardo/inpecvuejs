@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EQUIPAMIENTO</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-prymary">
+        <!-- BARRA NAVEGACIÓN -->
+        <div class="bg-light">
+            <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom border-primary">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">INPEC.es</a>
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Funcionarios
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="crearfuncionario.html">GUARDIANES</a></li>
+                                    <li><a class="dropdown-item" href="crearfuncionario.html">ADMINISTARTIVOS</a></li>
+
+                                </ul>
+                            </li>
+
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                               Equipamiento
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="indexequi.html">CREAR</a></li>
+                                    <li><a class="dropdown-item" href="#">Ver</a></li>
+
+                                </ul>
+                            </li>
+
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Prestamo
+                            </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="prestamo.html">Ver</a></li>
+
+                                </ul>
+                            </li>
+                    </ul>
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-nowrap" href="#">Cerar sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>id_equipamiento</th>
+                            <th>Marca Equipamiento</th>
+                            <th>Descripcion Equipamiento</th>
+                            <th>Serie Equipamiento</th>
+                            <th>Calibre Equipamiento</th>
+                            <th>Fecha Registro</th>
+                            <th>Estado Equipamiento</th>
+                            <th>Modelo Equipamiento</th>
+                            <th>Tipo de Equipamiento</th>
+                            <th>Actualizar</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>200</td>
+                            <td>smit</td>
+                            <td>pistola</td>
+                            <td>459</td>
+                            <td>9 ml</td>
+                            <td>12/22/2022</td>
+                            <td>Bueno</td>
+                            <td>fusil</td>
+                            <td>hdfjksah</td>
+
+                            <td><a href="indexequi.html" class="btn btn-primary btn-sm active" role="button">MODIFICAR</a></td>
+                            <td><a href="index.html" class="btn btn-primary btn-sm active" role="button">ELIMINAR
+                            </a></td>
+
+
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>201</td>
+                            <td>galil</td>
+                            <td>fusil</td>
+                            <td>458</td>
+                            <td>15 ml</td>
+                            <td>12/22/2022</td>
+                            <td>Regular</td>
+                            <td>fusil</td>
+                            <td>hdfjksah</td>
+                            <td><a href="index.html" class="btn btn-primary btn-sm active" role="button">MODIFICAR</a></td>
+                            <td><a href="#" class="btn btn-primary btn-sm active" role="button">ELIMINAR</a></td>
+
+
+                            <tr>
+                                <td>202</td>
+                                <td>smit</td>
+                                <td>pistola</td>
+                                <td>459</td>
+                                <td>9 ml</td>
+                                <td>12/22/2022</td>
+                                <td>Bueno</td>
+                                <td>fusil</td>
+                                <td>hdfjksah</td>
+                                <td><a href="index.html" class="btn btn-primary btn-sm active" role="button">MODIFICAR</a></td>
+                                <td><a href="index.html" class="btn btn-primary btn-sm active" role="button">ELIMINAR
+                                </a></td>
+
+
+
+                            </tr>
+
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <td><a href="crearfuncionario.html" class="btn btn-primary btn-sm active" role="button">NUEVO</a></td>
+
+
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="JS/alertas.js"></script>
+</body>
+
+</html>

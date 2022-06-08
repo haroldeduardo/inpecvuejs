@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionario</title>
+</head>
+<body>
+    <form
+  id="app"
+  @submit="checkForm"
+  action="https://vuejs.org/"
+  method="post"
+>
+
+  <p v-if="errors.length">
+    <b>Por favor, corrija el(los) siguiente(s) error(es):</b>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+  </p>
+
+  
+
+  <p>
+    <label for="codigo">Codigo</label>
+    <input
+      id="codigo"
+      v-model="codigo"
+      type="text"
+      name="codigo"
+    >
+  </p>
+
+
+
+  <p>
+    <label for="numero_de_documento">Numero de Docuneto</label>
+    <input
+      id="numero_de_documento"
+      v-model="numero_de_documento"
+      type="text"
+      name="numero_de_documento"
+      >
+  </p>
+  <p>
+    <label for="email">Correo electrónico</label>
+    <input
+      id="email"
+      v-model="email"
+      type="email"
+      name="email"
+    >
+  </p>
+  
+
+  <p>
+    <input
+      type="submit"
+      value="Enviar"
+    >
+  </p>
+
+</form>
+<script src="main.js"></script>
+</body>
+</html>

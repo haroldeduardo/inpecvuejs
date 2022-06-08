@@ -1,0 +1,31 @@
+<form
+  id="app"
+  @submit="checkForm"
+  method="post"
+>
+
+  <p v-if="errors.length">
+    <b>Por favor, corrija el(los) siguiente(s) error(es):</b>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+  </p>
+
+  <p>
+    <label for="name">Nuevo nombre del producto: </label>
+    <input
+      id="name"
+      v-model="name"
+      type="text"
+      name="name"
+    >
+  </p>
+
+  <p>
+    <input
+      type="submit"
+      value="Enviar"
+    >
+  </p>
+<script src="servidor.js"></script>
+</form>
